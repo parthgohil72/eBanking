@@ -43,13 +43,12 @@ public class LoansController {
         this.iLoansService = iLoansService;
     }
 
-    @Value("${build.version}")
+
     private String buildVersion;
 
-    @Autowired
+
     private Environment environment;
 
-    @Autowired
     private LoansContactInfoDto loansContactInfoDto;
 
     @Operation(

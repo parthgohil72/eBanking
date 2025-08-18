@@ -6,14 +6,18 @@ spring:
   profiles:
     active: "default"
   datasource:
-    url: jdbc:mysql://localhost:3306/accountsdb
-    username: root
-    password: root
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: ''
+  h2:
+    console:
+      enabled: true
   jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
     show-sql: true
-  sql:
-    init:
-      mode: always
   config:
     import: "optional:configserver:http://localhost:8071/"
 
@@ -31,7 +35,7 @@ management:
 
 eureka:
   instance:
-    prefer-ip-address: true
+    preferIpAddress: true
   client:
     fetchRegistry: true
     registerWithEureka: true
@@ -41,5 +45,5 @@ eureka:
 info:
   app:
     name: "accounts"
-    description: "ebanking accounts application"
-    version: "1.0"
+    description: "Eazy Bank Accounts Application"
+    version: "1.0.0"
