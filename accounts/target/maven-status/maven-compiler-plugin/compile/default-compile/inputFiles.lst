@@ -2,10 +2,14 @@ C:\Spring-project\E-banking\accounts\src\main\java\com\eazybytes\accounts\Accoun
 C:\Spring-project\E-banking\accounts\src\main\java\com\eazybytes\accounts\audit\AuditAwareImpl.java
 C:\Spring-project\E-banking\accounts\src\main\java\com\eazybytes\accounts\constants\AccountsConstants.java
 C:\Spring-project\E-banking\accounts\src\main\java\com\eazybytes\accounts\controller\AccountsController.java
+C:\Spring-project\E-banking\accounts\src\main\java\com\eazybytes\accounts\controller\CustomerController.java
 C:\Spring-project\E-banking\accounts\src\main\java\com\eazybytes\accounts\dto\AccountsContactInfoDto.java
 C:\Spring-project\E-banking\accounts\src\main\java\com\eazybytes\accounts\dto\AccountsDto.java
+C:\Spring-project\E-banking\accounts\src\main\java\com\eazybytes\accounts\dto\CardsDto.java
+C:\Spring-project\E-banking\accounts\src\main\java\com\eazybytes\accounts\dto\CustomerDetailsDto.java
 C:\Spring-project\E-banking\accounts\src\main\java\com\eazybytes\accounts\dto\CustomerDto.java
 C:\Spring-project\E-banking\accounts\src\main\java\com\eazybytes\accounts\dto\ErrorResponseDto.java
+C:\Spring-project\E-banking\accounts\src\main\java\com\eazybytes\accounts\dto\LoansDto.java
 C:\Spring-project\E-banking\accounts\src\main\java\com\eazybytes\accounts\dto\ResponseDto.java
 C:\Spring-project\E-banking\accounts\src\main\java\com\eazybytes\accounts\entity\Accounts.java
 C:\Spring-project\E-banking\accounts\src\main\java\com\eazybytes\accounts\entity\BaseEntity.java
@@ -17,5 +21,9 @@ C:\Spring-project\E-banking\accounts\src\main\java\com\eazybytes\accounts\mapper
 C:\Spring-project\E-banking\accounts\src\main\java\com\eazybytes\accounts\mapper\CustomerMapper.java
 C:\Spring-project\E-banking\accounts\src\main\java\com\eazybytes\accounts\repository\AccountsRepository.java
 C:\Spring-project\E-banking\accounts\src\main\java\com\eazybytes\accounts\repository\CustomerRepository.java
+C:\Spring-project\E-banking\accounts\src\main\java\com\eazybytes\accounts\service\Client\CardClient.java
+C:\Spring-project\E-banking\accounts\src\main\java\com\eazybytes\accounts\service\Client\LoanClient.java
 C:\Spring-project\E-banking\accounts\src\main\java\com\eazybytes\accounts\service\IAccountsService.java
+C:\Spring-project\E-banking\accounts\src\main\java\com\eazybytes\accounts\service\ICustomerService.java
 C:\Spring-project\E-banking\accounts\src\main\java\com\eazybytes\accounts\service\impl\AccountsServiceImpl.java
+C:\Spring-project\E-banking\accounts\src\main\java\com\eazybytes\accounts\service\impl\CustomerDetailsServiceImpl.java
