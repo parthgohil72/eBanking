@@ -83,5 +83,5 @@ services:
       service: microservice-eureka-config
 
 networks:
-  eazybank:
+  ebanking:
     driver: "bridge"
