@@ -4,20 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bcf0db31-f923-4941-8714-53f673178f5b" name="Changes" comment="Updating docker-compose properties">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="bcf0db31-f923-4941-8714-53f673178f5b" name="Changes" comment="Adding gateway server for handling external traffic and redirecting">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/default/common-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/common-config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/prod/common-config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/prod/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/qa/common-config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/qa/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/jib-image.digest" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/target/jib-image.digest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/jib-image.id" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/target/jib-image.id" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/jib-image.json" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/target/jib-image.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/jib-image.digest" beforeDir="false" afterPath="$PROJECT_DIR$/loans/target/jib-image.digest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/jib-image.id" beforeDir="false" afterPath="$PROJECT_DIR$/loans/target/jib-image.id" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/target/jib-image.json" beforeDir="false" afterPath="$PROJECT_DIR$/loans/target/jib-image.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,7 +247,7 @@
       <workItem from="1755497194952" duration="11717000" />
       <workItem from="1755537659530" duration="9531000" />
       <workItem from="1755590856450" duration="3625000" />
-      <workItem from="1755630868916" duration="2831000" />
+      <workItem from="1755630868916" duration="3615000" />
     </task>
     <task id="LOCAL-00001" summary="Initial changes">
       <option name="closed" value="true" />
@@ -293,7 +289,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755549176815</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Adding gateway server for handling external traffic and redirecting">
+      <option name="closed" value="true" />
+      <created>1755637121792</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1755637121792</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,6 +331,7 @@
     <MESSAGE value="Change from mysql to H2 database" />
     <MESSAGE value="Adding CustomerDetailsDto and using fienclient to communicate between microservices" />
     <MESSAGE value="Updating docker-compose properties" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updating docker-compose properties" />
+    <MESSAGE value="Adding gateway server for handling external traffic and redirecting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding gateway server for handling external traffic and redirecting" />
   </component>
 </project>
