@@ -6,6 +6,7 @@ import com.eazybytes.cards.dto.CardsDto;
 import com.eazybytes.cards.dto.ErrorResponseDto;
 import com.eazybytes.cards.dto.ResponseDto;
 import com.eazybytes.cards.service.ICardsService;
+import io.github.resilience4j.retry.annotation.Retry;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -15,6 +16,8 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
@@ -37,6 +40,8 @@ import org.springframework.web.bind.annotation.*;
 @Validated
 public class CardsController {
 
+    private static final Logger logger = LoggerFactory.getLogger(CardsController.class);
+
     private ICardsService iCardsService;
 
     public CardsController(ICardsService iCardsService) {
@@ -49,7 +54,7 @@ public class CardsController {
 
     private Environment environment;
 
-
+    @Autowired
     private CardsContactInfoDto cardsContactInfoDto;
 
     @Operation(
@@ -195,11 +200,19 @@ public class CardsController {
             )
     }
     )
+
+    @Retry(name = "getBuildInfo", fallbackMethod = "getBuildInfoFallBack")
     @GetMapping("/build-info")
     public ResponseEntity<String> getBuildInfo() {
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(buildVersion);
+    }
+
+    public ResponseEntity<String> getBuildInfoFallBack(Throwable throwable) {
+        return ResponseEntity
+                .status(HttpStatus.INTERNAL_SERVER_ERROR)
+                .body("0.9");
     }
 
     @Operation(
@@ -247,6 +260,7 @@ public class CardsController {
     )
     @GetMapping("/contact-info")
     public ResponseEntity<CardsContactInfoDto> getContactInfo() {
+        logger.debug("Invoked Cards contact-info API");
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(cardsContactInfoDto);
