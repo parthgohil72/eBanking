@@ -50,7 +50,6 @@ public class AccountsController {
 
     private String buildVersion;
 
-
     private Environment environment;
 
     @Autowired

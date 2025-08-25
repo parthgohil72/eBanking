@@ -4,37 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bcf0db31-f923-4941-8714-53f673178f5b" name="Changes" comment="Making docker changes">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="bcf0db31-f923-4941-8714-53f673178f5b" name="Changes" comment="Adding circuit break, retry pattern">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/controller/AccountsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/controller/AccountsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/service/Client/CardClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/service/Client/CardFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/service/Client/LoanClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/service/Client/LoanFeignClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/service/impl/CustomerDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/eazybytes/accounts/service/impl/CustomerDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/eazybytes/accounts/controller/AccountsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/target/classes/com/eazybytes/accounts/controller/AccountsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/eazybytes/accounts/service/Client/CardClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/target/classes/com/eazybytes/accounts/service/Client/CardClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/eazybytes/accounts/service/Client/LoanClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/target/classes/com/eazybytes/accounts/service/Client/LoanClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/eazybytes/accounts/service/impl/AccountsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/target/classes/com/eazybytes/accounts/service/impl/AccountsServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/eazybytes/accounts/service/impl/CustomerDetailsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/target/classes/com/eazybytes/accounts/service/impl/CustomerDetailsServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/eazybytes/cards/controller/CardsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/eazybytes/cards/controller/CardsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/accounts-prod.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/accounts-qa.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/accounts.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/accounts.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/cards-prod.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/cards-qa.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/cards.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/cards.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/loans-prod.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/loans-qa.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/config/loans.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/config/loans.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose/default/common-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/default/common-config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/eazybytes/accounts/service/Client/CardClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/target/classes/com/eazybytes/accounts/service/Client/LoanClient.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gatewayserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gatewayserver/src/main/java/com/easybytes/gatewayserver/GatewayserverApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/easybytes/gatewayserver/GatewayserverApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gatewayserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,52 +57,53 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AccountsApplication.executor": "Debug",
-    "Application.CardsApplication.executor": "Debug",
-    "Application.ConfigserverApplication.executor": "Debug",
-    "Application.EurekaserverApplication.executor": "Debug",
-    "Application.LoansApplication.executor": "Debug",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.AccountsApplication.executor": "Debug",
-    "Spring Boot.CardsApplication.executor": "Debug",
-    "Spring Boot.ConfigserverApplication.executor": "Debug",
-    "Spring Boot.EurekaserverApplication.executor": "Debug",
-    "Spring Boot.GatewayserverApplication.executor": "Debug",
-    "Spring Boot.LoansApplication.executor": "Debug",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Spring-project/E-banking",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "vcs.Git",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AccountsApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.CardsApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.ConfigserverApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.EurekaserverApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.LoansApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.AccountsApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.CardsApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.ConfigserverApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.EurekaserverApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.GatewayserverApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.LoansApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Spring-project/E-banking&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.easybytes.gatewayserver.Config" />
       <recent name="com.eazybytes.accounts.service.Client" />
       <recent name="com.eazybytes.accounts.dto" />
     </key>
@@ -255,11 +234,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LoansApplication" />
+        <item itemvalue="Application.CardsApplication" />
         <item itemvalue="Application.AccountsApplication" />
         <item itemvalue="Application.EurekaserverApplication" />
         <item itemvalue="Application.ConfigserverApplication" />
-        <item itemvalue="Application.CardsApplication" />
-        <item itemvalue="Application.LoansApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -284,7 +263,10 @@
       <workItem from="1755590856450" duration="3625000" />
       <workItem from="1755630868916" duration="4031000" />
       <workItem from="1755677160116" duration="8373000" />
-      <workItem from="1755785110460" duration="14543000" />
+      <workItem from="1755785110460" duration="14861000" />
+      <workItem from="1755934141931" duration="629000" />
+      <workItem from="1756046018722" duration="663000" />
+      <workItem from="1756104579521" duration="7391000" />
     </task>
     <task id="LOCAL-00001" summary="Initial changes">
       <option name="closed" value="true" />
@@ -342,7 +324,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755637958097</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Adding circuit break, retry pattern">
+      <option name="closed" value="true" />
+      <created>1755811743442</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1755811743442</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,6 +368,7 @@
     <MESSAGE value="Updating docker-compose properties" />
     <MESSAGE value="Adding gateway server for handling external traffic and redirecting" />
     <MESSAGE value="Making docker changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Making docker changes" />
+    <MESSAGE value="Adding circuit break, retry pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding circuit break, retry pattern" />
   </component>
 </project>

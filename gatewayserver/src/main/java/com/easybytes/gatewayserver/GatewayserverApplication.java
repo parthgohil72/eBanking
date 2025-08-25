@@ -37,7 +37,7 @@ public class GatewayserverApplication {
                 .route(
                         p -> p
                                 .path("/ebanking/cards/**")
-                                .filters(f -> f.rewritePath("/ebanking/accounts/(?<segment>.*)","/${segment}")
+                                .filters(f -> f.rewritePath("/ebanking/cards/(?<segment>.*)","/${segment}")
                                         .addResponseHeader("X-Response-Time", LocalDateTime.now().toString())
                                         .retry(retryConfig -> retryConfig.setRetries(3)
                                                 .setMethods(HttpMethod.GET)
@@ -46,7 +46,7 @@ public class GatewayserverApplication {
                 .route(
                         p -> p
                                 .path("/ebanking/loans/**")
-                                .filters(f -> f.rewritePath("/ebanking/accounts/(?<segment>.*)","/${segment}")
+                                .filters(f -> f.rewritePath("/ebanking/loans/(?<segment>.*)","/${segment}")
                                         .addResponseHeader("X-Response-Time", LocalDateTime.now().toString()))
                                 .uri("lb://LOANS")).build();
     }
